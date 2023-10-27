@@ -39,6 +39,7 @@ class MyHomePage extends StatelessWidget {
                 TextFormField(
                   keyboardType: TextInputType.number,
                   controller: name,
+                  obscureText: true,
                   validator: (value){
                     if (value?.isEmpty ?? true) {
                       return 'This field is required';
